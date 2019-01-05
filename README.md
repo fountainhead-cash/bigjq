@@ -17,7 +17,7 @@ This library makes use of that feature and creates an abstraction on top of node
 # installation
 
 ```
-npm install --save bigjq
+npm install --save fountainhead-bigjq
 ```
 
 > You don't need to install node-jq separately because it's automatically installed as a dependency when you install this library.
@@ -25,7 +25,7 @@ npm install --save bigjq
 # usage
 
 ```
-const jq = require('bigjq')
+const jq = require('fountainhead-bigjq')
 jq.run(filter, data)
 .then(function(result) {
   console.log("result = ", result)
