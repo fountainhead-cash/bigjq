@@ -1,40 +1,15 @@
 {
-  "_from": "bigjq@0.0.13",
-  "_id": "bigjq@0.0.13",
-  "_inBundle": false,
-  "_integrity": "sha512-fw2NvCIQpvcTDFkloayZ0lcktlzfshzp7giW5ckeP343vJLk7uCqySd13iikoee1QXZlNW/mJ3B0AaL+mzNVOA==",
-  "_location": "/bigjq",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "bigjq@0.0.13",
-    "name": "bigjq",
-    "escapedName": "bigjq",
-    "rawSpec": "0.0.13",
-    "saveSpec": null,
-    "fetchSpec": "0.0.13"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/bigjq/-/bigjq-0.0.13.tgz",
-  "_shasum": "3780dc8f448c54b0045aa00b94082ce186ecf944",
-  "_spec": "bigjq@0.0.13",
-  "_where": "/home/pizzapi/code/fountainhead/bitqueryd",
+  "name": "fountainhead-bigjq",
+  "version": "0.0.13",
+  "description": "A [node-jq](https://github.com/sanack/node-jq) plugin to enable big arguments",
+  "main": "index.js",
   "author": "",
-  "bundleDependencies": false,
+  "license": "ISC",
   "dependencies": {
     "child_process": "^1.0.2",
     "node-jq": "1.3.1"
   },
-  "deprecated": false,
-  "description": "A [node-jq](https://github.com/sanack/node-jq) plugin to enable big arguments",
-  "license": "ISC",
-  "main": "index.js",
-  "name": "bigjq",
   "scripts": {
     "postinstall": "./run.sh"
-  },
-  "version": "0.0.13"
+  }
 }
