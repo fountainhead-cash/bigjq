@@ -2,7 +2,7 @@ const spawn = require('child_process').spawn;
 var getPath = function() {
   return process.cwd() + '/node_modules/node-jq/bin/jq'
 }
-var run = function(filter, data) {
+var run = function(filter, data, log_result=true) {
   const child = spawn(getPath(), [filter]);
   return new Promise(function(resolve, reject) {
     let chunks = [];
@@ -11,7 +11,8 @@ var run = function(filter, data) {
     });
     child.stdout.on('end', () => {
       let str = chunks.join("");
-      console.log("STR = ", str)
+      if(log_result)
+        console.log("STR = ", str)
       try {
         let parsed = JSON.parse(str);
         resolve(parsed)
